@@ -161,6 +161,24 @@
             "description" : "A fork of Paper 1.8 with changes for the Stratus Network using Magnet's build system.",
             "buildOn" : ["paper"],
             "active" : true
+        },
+        {
+            "name" : "minestorm",
+            "displayname" : "Minestorm",
+            "repository" : "https://github.com/Minestom/Minestom",
+            "url": "https://minestom.net/",
+            "description" : "1.17.1 Lightweight and multi-threaded Minecraft server",
+            "buildOn" : [],
+            "active" : true
+        },
+        {
+            "name" : "layercraft",
+            "displayname" : "Layercraft",
+            "repository" : "https://github.com/Layercraft",
+            "url": "https://layercraft.io/",
+            "description" : "Minecraft server according to new standards and their implementation which should go in the direction of microservices.",
+            "buildOn" : [],
+            "active" : true
         }
     ]
 }
