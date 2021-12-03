@@ -1,33 +1,46 @@
 {
-    "forks": [
+    "versions": [
+        {
+            "name" : "vanilla",
+            "displayname" : "Minecraft Vanilla",
+            "repository" : "",
+            "url": "",
+            "description" : "",
+            "buildOn" : [],
+            "active" : true
+        },
         {
             "name" : "bukkit",
             "displayname" : "Bukkit",
-            "url" : "", 
-            "description" : "",
-            "buildOn" : ["minecraft"],
+            "repository" : "https://hub.spigotmc.org/stash/projects/SPIGOT/repos/bukkit/browse",
+            "url": "https://dev.bukkit.org/", 
+            "description" : "Bukkit is a free, open-source, software that provides the means to extend the popular Minecraft multiplayer server.",
+            "buildOn" : ["vanilla"],
             "active" : false
         }, 
         {
             "name" : "spigot",
             "displayname" : "Spigot",
-            "url" : "", 
-            "description" : "",
+            "repository" : "https://hub.spigotmc.org/stash/projects/SPIGOT/repos/spigot/browse",
+            "url": "https://www.spigotmc.org/", 
+            "description" : "The home of Spigot a high performance, no lag customized CraftBukkit Minecraft server API.",
             "buildOn" : ["bukkit"],
             "active" : true
         }, 
         {
             "name" : "paper",
             "displayname" : "Paper",
-            "url" : "", 
-            "description" : "",
+            "repository" : "https://github.com/PaperMC/Paper",
+            "url": "https://papermc.io/",  
+            "description" : "High performance Spigot fork that aims to fix gameplay and mechanics inconsistencies",
             "buildOn" : ["spigot"],
             "active" : true
         },
         {
             "name" : "tunity",
             "displayname" : "Tunity",
-            "url" : "https://github.com/Tuinity/Tuinity", 
+            "repository" : "https://github.com/Tuinity/Tuinity",
+            "url": "",
             "description" : "Minecraft server software fork of Paper to improve performance without behavioural changes.",
             "buildOn" : ["paper"],
             "active" : false
@@ -35,7 +48,8 @@
         {
             "name" : "airplane",
             "displayname" : "Airplane",
-            "url" : "https://github.com/TECHNOVE/Airplane",
+            "repository" : "https://github.com/TECHNOVE/Airplane",
+            "url": "", 
             "description" : "A stable, optimized, well supported 1.16.5 & 1.17 Paper fork.",
             "buildOn" : ["paper"],
             "active" : true
@@ -43,7 +57,8 @@
         {
             "name" : "purpur",
             "displayname" : "Purpur",
-            "url" : "https://github.com/pl3xgaming/Purpur",
+            "repository" : "https://github.com/pl3xgaming/Purpur",
+            "url": "https://purpur.pl3x.net/",
             "description" : "Purpur is a drop-in replacement for Paper servers designed for configurability, new fun and exciting gameplay features, and high performance built on top of Airplane.",
             "buildOn" : ["airplane"],
             "active" : true
@@ -51,7 +66,8 @@
         {
             "name" : "flamepaper",
             "displayname" : "FlamePaper",
-            "url" : "https://github.com/2lstudios-mc/FlamePaper",
+            "repository" : "https://github.com/2lstudios-mc/FlamePaper",
+            "url": "https://www.mc-market.org/resources/19660/",
             "description" : "High performance PaperSpigot fork that aims to fix gameplay and mechanics inconsistencies",
             "buildOn" : ["paper"],
             "active" : true
@@ -59,7 +75,8 @@
         {
             "name" : "tacospigot",
             "displayname" : "TacoSpigot",
-            "url" : "https://github.com/TacoSpigot/TacoSpigot",
+            "repository" : "https://github.com/TacoSpigot/TacoSpigot",
+            "url": "",
             "description" : "A even-higher higher performance PaperSpigot fork that adds new features.",
             "buildOn" : ["paper"],
             "active" : true
@@ -67,7 +84,8 @@
         {
             "name" : "nachospigot",
             "displayname" : "NachoSpigot",
-            "url" : "https://github.com/CobbleSword/NachoSpigot",
+            "repository" : "https://github.com/CobbleSword/NachoSpigot",
+            "url": "https://nacho.sculas.xyz/",
             "description" : "NachoSpigot is a fork of TacoSpigot 1.8.9 that offers several enhancements to performance as well as bug fixes.",
             "buildOn" : ["tacospigot"],
             "active" : true
@@ -75,7 +93,8 @@
         {
             "name" : "sugarane",
             "displayname" : "Sugarcane",
-            "url" : "https://github.com/SugarcaneMC/Sugarcane",
+            "repository" : "https://github.com/SugarcaneMC/Sugarcane",
+            "url": "https://sugarcanemc.org/",
             "description" : "Highly optimized Purpur fork focusing on stability and performance.",
             "buildOn" : ["purpur"],
             "active" : true
@@ -83,7 +102,8 @@
         {
             "name" : "dionysus",
             "displayname" : "Dionysus",
-            "url" : "https://github.com/nopjmp/Dionysus",
+            "repository" : "https://github.com/nopjmp/Dionysus",
+            "url": "",
             "description" : "Minecraft 1.12.2 Paper Fork designed for high player counts and anarchy.",
             "buildOn" : ["paper"],
             "active" : true
@@ -91,23 +111,26 @@
         {
             "name" : "glowstone",
             "displayname" : "Glowstone",
-            "url" : "https://github.com/GlowstoneMC/Glowstone",
-            "description" : "https://github.com/GlowstoneMC/Glowstone",
+            "repository" : "https://github.com/GlowstoneMC/Glowstone",
+            "url": "https://glowstone.net/",
+            "description" : "A fast, customizable and compatible open source server for Minecraft: Java Edition",
             "buildOn" : ["minecraft"],
             "active" : true
         },
         {
             "name" : "lumipaper",
             "displayname" : "LumiPaper",
-            "url" : "https://github.com/LuminuNET/LumiPaper",
-            "description" : "",
+            "repository" : "https://github.com/LuminuNET/LumiPaper",
+            "url": "",
+            "description" : "Fork of the Minecraft server software Paper",
             "buildOn" : ["paper"],
             "active" : false
         },
         {
             "name" : "sparklypaper",
             "displayname" : "SparklyPaper",
-            "url" : "https://github.com/SparklyPower/SparklyPaper",
+            "repository" : "https://github.com/SparklyPower/SparklyPaper",
+            "url": "",
             "description" : "SparklyPower's Tuinity/Paper fork, with a mix of weird & crazy patches from other forks",
             "buildOn" : ["paper", "tunity"],
             "active" : true
@@ -115,7 +138,8 @@
         {
             "name" : "cloudspigot",
             "displayname" : "CloudSpigot",
-            "url" : "https://github.com/Linux4/CloudSpigot",
+            "repository" : "https://github.com/Linux4/CloudSpigot",
+            "url": "",
             "description" : "High performance PaperSpigot fork used by Minecraft Server Cloudz.ml.",
             "buildOn" : ["paper"],
             "active" : false
@@ -123,7 +147,8 @@
         {
             "name" : "arcadepaper",
             "displayname" : "ArcadePaper",
-            "url" : "https://github.com/arcadiamc-cz/ArcadePaper",
+            "repository" : "https://github.com/arcadiamc-cz/ArcadePaper",
+            "url": "",
             "description" : "patch for PaperSpigot with many features.",
             "buildOn" : ["paper"],
             "active" : true
@@ -131,7 +156,8 @@
         {
             "name" : "sportpaper",
             "displayname" : "SportPaper",
-            "url" : "https://github.com/Electroid/SportPaper",
+            "repository" : "https://github.com/Electroid/SportPaper",
+            "url": "",
             "description" : "A fork of Paper 1.8 with changes for the Stratus Network using Magnet's build system.",
             "buildOn" : ["paper"],
             "active" : true
